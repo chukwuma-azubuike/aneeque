@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+input {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 500;
+  padding: 0 40px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.color {
+  color: #EEF2F8;
+  color: #A2B1D1;
+  color: #A2A8BB;
+  color: #0932C3;
+  color: #353D57;
+  color: #5F90D8;
+  color: #4B66B1;
+  color: #C96C4F;
+}
