@@ -76,7 +76,7 @@ function IncomeExpenseChart(props) {
             </div>
             <Bar data={chartData}
                 options={{ maintainAspectRatio: true }}
-                options={options} height={80}
+                options={options} height={100}
             />
         </div>
     )

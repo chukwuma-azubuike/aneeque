@@ -1,4 +1,5 @@
-
+import products from "../data/data.js";
+import Products from "./products";
 
 function PopularProducts() {
     return (
@@ -8,7 +9,7 @@ function PopularProducts() {
             </div>
             <div style={{
                 background: '#EEF2F8', margin: '15px 0', padding: '10px 20px', fontSize: '14px', fontWeight: '600',
-                borderRadius: '4px', display: 'grid', gridTemplateColumns: '12% 18% 20% 15% 11% 11% 13%', color:'rgb(162, 168, 187)'
+                borderRadius: '4px', display: 'grid', gridTemplateColumns: '12% 18% 20% 15% 11% 11% 13%', color: 'rgb(162, 168, 187)'
             }} >
                 <span>Photos</span>
                 <span>Name</span>
@@ -17,6 +18,21 @@ function PopularProducts() {
                 <span>Brand</span>
                 <span>Price</span>
                 <span>Status</span>
+            </div>
+            <div style={{ padding: '0 20px' }} >
+                {products.map((item) =>
+                    <Products
+                        photo={item.photo}
+                        name={item.name}
+                        productNumber={item.productNumber}
+                        date={item.date}
+                        category={item.category}
+                        brand={item.brand}
+                        price={item.price}
+                        status={item.status}
+                        viewers={item.viewers}
+                    />
+                )}
             </div>
         </div>
     )

@@ -13,7 +13,7 @@ import { getAllByPlaceholderText } from '@testing-library/react';
 
 function SideMenu() {
     return (
-        <nav className='right-border-line' style={{ padding: '100px 0px 54px', display: 'fixed' }} >
+        <nav className='right-border-line' style={{ padding: '100px 0px 54px', position: 'fixed', width:'265px' }} >
             <h3>Menu</h3>
             <div style={{ color: '#A2A8BB' }} >
                 <ul>
