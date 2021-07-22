@@ -5,6 +5,7 @@ import ShoppingCartRounded from '@material-ui/icons/ShoppingCartRounded';
 import React from 'react';
 import IncomeExpenseChart from './income-expense-chart';
 import Metrics from './metrics';
+import PopularProducts from './popular-products';
 
 function Overview() {
     return (
@@ -25,6 +26,7 @@ function Overview() {
                     amount='$27,340.00' title='Total Orders' />
             </div>
             <IncomeExpenseChart />
+            <PopularProducts />
         </div>
     )
 }
