@@ -13,26 +13,26 @@ import { getAllByPlaceholderText } from '@testing-library/react';
 
 function SideMenu() {
     return (
-        <nav className='right-border-line' style={{ width: '260px', height: '100%', padding: '60px 0', display:'inline-block' }} >
+        <nav className='right-border-line' style={{ padding: '100px 0px 54px', display: 'inline-block' }} >
             <h3>Menu</h3>
             <div style={{ color: '#A2A8BB' }} >
                 <ul>
-                    <li><DashboardIcon /> <p>Overview</p></li>
-                    <li><DescriptionIcon /> <p>Orders</p></li>
-                    <li><LockIcon /> <p>Products</p></li>
-                    <li><SettingsIcon /> <p>Setting</p></li>
+                    <a href=''> <li><DashboardIcon /> <p>Overview</p></li></a>
+                    <a href=''> <li><DescriptionIcon /> <p>Orders</p></li></a>
+                    <a href=''> <li><LockIcon /> <p>Products</p></li></a>
+                    <a href=''> <li><SettingsIcon /> <p>Setting</p></li></a>
                 </ul>
             </div>
             <h3>Business</h3>
             <div style={{ color: '#A2A8BB' }} >
                 <ul>
-                    <li><SendRoundedIcon style={{ transform: 'rotate(-40deg)' }} /> <p>Shipment</p></li>
-                    <li><PeopleIcon /> <p>Employee</p></li>
+                    <a href=''><li><SendRoundedIcon style={{ transform: 'rotate(-40deg)' }} /> <p>Shipment</p></li></a>
+                    <a href=''><li><PeopleIcon /> <p>Employee</p></li></a>
                 </ul>
             </div>
             <div style={{ position: 'relative', bottom: '-70px' }} >
                 <p>© Aneeque {(new Date()).getFullYear()}</p>
-                <p style={{ fontSize: 'smaller', fontWeight: '400', color:'#A2A8BB' }} >Platform for solutions of all types
+                <p style={{ fontSize: 'smaller', fontWeight: '400', color: '#A2A8BB' }} >Platform for solutions of all types
                     <br />    of business to be more advanced.</p>
             </div>
         </nav>

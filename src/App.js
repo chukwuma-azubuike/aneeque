@@ -7,8 +7,10 @@ function App() {
   return (
     <div style={{ padding: '40px 30px', backgroundColor: 'EEF2F8' }} >
       <Header />
-      <SideMenu />
-      <Overview />
+      <div style={{ display: 'grid', gridTemplateColumns: '18% 57% auto' }} >
+        <SideMenu className='grid-section' />
+        <Overview className='grid-section' />
+      </div>
     </div>
   );
 }

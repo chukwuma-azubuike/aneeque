@@ -30,18 +30,27 @@ p {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
 li p {
   padding-left: 20px;
   font-weight: bold;
 }
 
-.right-border-line{
+.right-border-line {
   border-right: 2px solid #EEF2F8;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+/* .home-font {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+} */
 
 .color {
   color: #EEF2F8;
@@ -52,4 +61,9 @@ code {
   color: #5F90D8;
   color: #4B66B1;
   color: #C96C4F;
+  color: rgb(26, 194, 26);
+  color: #ee9a2b;
+  color: rgb(170, 9, 170);
+  color: rgb(252, 26, 26);
+  color: rgb(253, 97, 97) ;
 }
