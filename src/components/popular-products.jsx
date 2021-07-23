@@ -1,9 +1,9 @@
-import products from "../data/data.js";
+import { products } from "../data/data";
 import Products from "./products";
 
 function PopularProducts() {
     return (
-        <div style={{ border: '2.5px solid #EEF2F8', borderRadius: '6px', padding: '15px', marginTop: '30px' }} >
+        <div style={{ border: '2.5px solid #EEF2F8', borderRadius: '6px', padding: '15px 15px 0', marginTop: '30px' }} >
             <div style={{ fontWeight: '600', fontSize: '18px' }} >
                 <p style={{ margin: '0' }} >Popular Products</p>
             </div>
