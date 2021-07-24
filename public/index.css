@@ -45,13 +45,31 @@ li p {
   border-right: 2px solid #EEF2F8;
 }
 
+.nav-item {
+  color: #A2A8BB;
+}
+
+.nav-div-overlay {
+  background-color: transparent;
+  width: 99%;
+  height: 54px;
+  position: absolute;
+  transition: 0.3s all ease;
+}
+
+.default-item {
+  border-right: 4px solid #4B66B1;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* .home-font {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-} */
+/* Hover Effects */
+
+.nav-div-overlay:hover {
+  background-color: rgba(147, 178, 236, 0.171);
+}
 
 .color {
   color: #EEF2F8;
@@ -67,6 +85,6 @@ code {
   color: #ee9a2b;
   color: rgb(170, 9, 170);
   color: rgb(252, 26, 26);
-  color: rgb(253, 97, 97) ;
-  color: rgb(250, 244, 241) ;
+  color: rgb(253, 97, 97);
+  color: rgb(250, 244, 241);
 }

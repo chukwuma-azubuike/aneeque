@@ -23,9 +23,9 @@ function IncomeExpenseChart(props) {
             maxBarThickness: 40,
             minBarLength: 0,
             borderRadius: 24,
+            borderSkipped: false,
             backgroundColor: '#9bc1fc',
             hoverBackgroundColor: '#4B66B1',
-            clip: { left: 15, top: 15, right: 20, bottom: 20 },
             data: [4, 8, 6, 2, 7, 6, 4, 6, 4, 6, 4, 8]
         }]
     }
@@ -37,10 +37,13 @@ function IncomeExpenseChart(props) {
             },
         },
         tooltips: {
+            enabled: false,
             callbacks: {
                 label: function (tooltipItem) {
                     return tooltipItem.yLabel;
-                }
+                },
+                yAlign: () => { return 'top'; },
+                enabled: false,
             }
         },
         scales: {
@@ -56,21 +59,19 @@ function IncomeExpenseChart(props) {
                     borderWidth: 0,
                     tickWidth: 0,
                 },
-                offset: true,
             },
             x: {
                 grid: {
                     display: false,
                     offset: true
                 },
-                // offset: true,
             },
         }
     };
 
     return (
         <div style={{ border: '2.5px solid #EEF2F8', borderRadius: '6px', padding: '15px', marginTop: '30px' }} >
-            <div style={{ fontWeight: '600', fontSize: '18px' }} >
+            <div style={{ fontWeight: '600', fontSize: '18px', marginBottom: '20px' }} >
                 <a href='' ><span className='color-toggle' onClick={handleClick} style={{ margin: '0 20px 0 0', color: 'black' }} >Income</span></a>
                 <a href=''><span className='color-toggle' onClick={handleClick} style={{ color: '#A2A8BB' }}>Expense</span></a>
             </div>

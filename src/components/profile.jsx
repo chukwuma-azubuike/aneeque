@@ -3,10 +3,18 @@ import Lock from "@material-ui/icons/Lock";
 import People from "@material-ui/icons/People";
 import RecentOrders from "./recent-orders";
 import { recentProducts } from "../data/data";
+import { useEffect, useState } from "react";
 
 function Profile() {
+
+    const [reputation, setReputation] = useState(0);
+
+    useEffect(() => {
+        setReputation(85);
+    });
+
     return (
-        <div style={{ position: 'fixed', borderLeft: '2px solid #EEF2F8', width: '304px', right: '0', padding: '100px 40px 54px' }} >
+        <div style={{ position: 'fixed', borderLeft: '2px solid #EEF2F8', width: '304px', right: '0', padding: '80px 40px 54px' }} >
             <div>
                 <div style={{ height: '100px', width: '100px', borderRadius: '50px', background: 'rgb(75, 102, 177)', margin: 'auto' }} />
                 <h3 style={{ color: 'rgb(75, 102, 177)', textAlign: 'center', marginTop: '30px' }} >Kunta Pulsa</h3>
@@ -41,7 +49,7 @@ function Profile() {
                             <h5 style={{ margin: '0' }} >85%</h5>
                         </div>
                         <div style={{ height: '4px', background: '#EEF2F8', borderRadius: '8px', width: '100%', marginTop: '5px' }} >
-                            <div style={{ backgroundColor: '#ee9a2b', width: '85%', borderRadius: '24px', height: '100%' }} />
+                            <div style={{ backgroundColor: '#ee9a2b', width: `${reputation}%`, borderRadius: '24px', height: '100%', transition: '1.5s ease all' }} />
                         </div>
                     </div>
                 </div>
