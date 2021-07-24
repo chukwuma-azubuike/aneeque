@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 500px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+input {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: 500;
+  padding: 0 40px;
+}
+
+ul, li {
+  list-style: none;
+  align-items: center;
+  padding: 0;
+}
+
+li {
+  display: flex;
+}
+
+p {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+li p {
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.right-border-line {
+  border-right: 2px solid #EEF2F8;
+}
+
+.nav-item {
+  color: #A2A8BB;
+}
+
+.nav-div-overlay {
+  background-color: transparent;
+  width: 99%;
+  height: 54px;
+  position: absolute;
+  transition: 0.3s all ease;
+}
+
+.default-item {
+  border-right: 4px solid #4B66B1;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Hover Effects */
+
+.nav-div-overlay:hover {
+  background-color: rgba(147, 178, 236, 0.171);
+}
+
+.color {
+  color: #EEF2F8;
+  color: #A2B1D1;
+  color: #A2A8BB;
+  color: #0932C3;
+  color: #353D57;
+  color: #5F90D8;
+  color: #9bc1fc;
+  color: #4B66B1;
+  color: #C96C4F;
+  color: rgb(26, 194, 26);
+  color: #ee9a2b;
+  color: rgb(170, 9, 170);
+  color: rgb(252, 26, 26);
+  color: rgb(253, 97, 97);
+  color: rgb(250, 244, 241);
+}
