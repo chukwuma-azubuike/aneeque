@@ -14,7 +14,7 @@ function Profile() {
     });
 
     return (
-        <div style={{ position: 'fixed', borderLeft: '2px solid #EEF2F8', width: '304px', right: '0', padding: '80px 40px 54px' }} >
+        <div style={{ borderLeft: '2px solid #EEF2F8', width: '304px', padding: '80px 40px 54px' }} >
             <div>
                 <div style={{ height: '100px', width: '100px', borderRadius: '50px', background: 'rgb(75, 102, 177)', margin: 'auto' }} />
                 <h3 style={{ color: 'rgb(75, 102, 177)', textAlign: 'center', marginTop: '30px' }} >Kunta Pulsa</h3>

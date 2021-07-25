@@ -9,7 +9,7 @@ import PopularProducts from './popular-products';
 
 function Overview() {
     return (
-        <div style={{ padding: '100px 40px 0', display: 'inline-block', marginLeft: '265px' }} >
+        <div style={{ padding: '100px 40px 0', display: 'inline-block', marginLeft: '265px', width: '760px' }} >
             <h3>Overview</h3>
             <div style={{ marginTop: '30px', display: 'grid', gridTemplateColumns: 'auto auto auto auto', gridGap: '20px' }} >
                 <Metrics icon={<Lock style={{ color: '#ee9a2b' }} />}

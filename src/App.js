@@ -8,7 +8,7 @@ function App() {
   return (
     <div style={{ padding: '40px 30px', backgroundColor: 'EEF2F8' }} >
       <Header />
-      <div style={{ display: 'grid', gridTemplateColumns: '76% 24%' }} >
+      <div style={{ display: 'grid', gridTemplateColumns: 'auto max-content' }} >
         <SideMenu className='grid-section' />
         <Overview className='grid-section' />
         <Profile />
